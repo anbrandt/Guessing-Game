@@ -11,7 +11,6 @@ public class Main {
 		//player vs computer
 		Random randomNumber = new Random();
 
-		//guess the number from 1 to 100
 		int numberToGuess = randomNumber.nextInt(100);
 
 		int numberOfTries = 0;

@@ -19,9 +19,7 @@ public class CPUPlayer {
 		int begin = 0;
 		int end = 1000;
 
-
 		boolean win = false;
-
 
 		while (win == false) {
 
