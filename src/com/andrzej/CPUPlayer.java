@@ -12,12 +12,12 @@ public class CPUPlayer {
 
 //player vs computer using binary search
 		int numberOfTries = 0;
-		int guessedNumber = 0;
+		int guessedNumber;
 		Scanner input = new Scanner(System.in);
 
-		String verificator;
+		String verifier;
 		int begin = 0;
-		int end = 100;
+		int end = 1000;
 
 
 		boolean win = false;
@@ -28,19 +28,19 @@ public class CPUPlayer {
 			guessedNumber = (begin + end) / 2;
 			System.out.println("Computer guessed " + guessedNumber + ". Is it the right one? ");
 			numberOfTries++;
-			verificator = input.next();
+			verifier = input.next();
 
 
-			if (verificator.equals("win")) {
+			if (verifier.equals("win")) {
 				System.out.println("That is correct " + guessedNumber);
 				System.out.println("Computer guessed the number after " + numberOfTries + " tries");
 				win = true;
 
-			} else if (verificator.equals("more")) {
+			} else if (verifier.equals("more")) {
 				System.out.println("more");
 				begin = guessedNumber + 1;
 
-			} else if (verificator.equals("less")) {
+			} else if (verifier.equals("less")) {
 				System.out.println("less");
 				end = guessedNumber - 1;
 
