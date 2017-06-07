@@ -45,12 +45,11 @@ public class CPUPlayer {
 				end = guessedNumber - 1;
 
 			} else {
-				System.out.println("Input has to be win, high or low");
+				System.out.println("Input has to be 'win', 'more' or 'less'");
+				numberOfTries--; //so we dont add tries if i made a wrong input to scanner
 			}
 
 		}
-
-		System.out.println("end of the program");
 
 	}
 
