@@ -16,7 +16,6 @@ public class Game {
 
 		Scanner scanner = new Scanner(System.in);
 		String answer = scanner.next();
-//	boolean escapeTheLoop = false;
 
 		try {
 
@@ -35,12 +34,16 @@ public class Game {
 			} else if (answer.equals("exit")) {
 				System.out.println("End of the program");
 
+			} else {
+				System.out.println("You have to choose between the h, c or exit");
+				gameStart();
 			}
 
 
 		} catch (InputMismatchException e) {
 			e.getMessage();
 			System.out.println("You have to press either h or c");
+			gameStart();
 		}
 	}
 }

@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by andrzej on 08.06.17.
  */
 public class HumanPlayer {
-	
+
 
 	private int numberOfTries = 0;
 
