@@ -8,9 +8,7 @@ import java.util.Scanner;
 public class CPUPlayer {
 
 
-	public static void main(String[] args) {
-
-//player vs computer using binary search
+	public void cpuVShuman() {
 		int numberOfTries = 0;
 		int guessedNumber;
 		Scanner input = new Scanner(System.in);
@@ -48,6 +46,13 @@ public class CPUPlayer {
 			}
 
 		}
+
+
+	}
+
+	public static void main(String[] args) {
+
+//player vs computer using binary search
 
 	}
 
