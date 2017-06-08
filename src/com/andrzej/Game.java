@@ -10,28 +10,24 @@ public class Game {
 
 	public void gameStart() {
 
-		System.out.println("Human vs CPU - press h");
-		System.out.println("CPU vs human - press c");
-		System.out.println("Write exit to exit");
 
-		Scanner scanner = new Scanner(System.in);
-		String answer = scanner.next();
+		String answerFromUser = initialMessages();
 
 		try {
 
-			if (answer.equals("h")) {
+			if (answerFromUser.equals("h")) {
 
 				HumanPlayer humanPlayer = new HumanPlayer();
 				humanPlayer.humanVScpu();
 				gameStart();
 
-			} else if (answer.equals("c")) {
+			} else if (answerFromUser.equals("c")) {
 
 				CPUPlayer cpuPlayer = new CPUPlayer();
 				cpuPlayer.cpuVShuman();
 				gameStart();
 
-			} else if (answer.equals("exit")) {
+			} else if (answerFromUser.equals("exit")) {
 				System.out.println("End of the program");
 
 			} else {
@@ -45,6 +41,18 @@ public class Game {
 			System.out.println("You have to press either h or c");
 			gameStart();
 		}
+	}
+
+
+	public String initialMessages () {
+		System.out.println("Human vs CPU - press h");
+		System.out.println("CPU vs human - press c");
+		System.out.println("Write exit to exit");
+
+
+		Scanner scanner = new Scanner(System.in);
+		String answer = scanner.next();
+		return answer;
 	}
 }
 
