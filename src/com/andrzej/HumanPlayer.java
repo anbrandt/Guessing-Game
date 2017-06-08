@@ -7,14 +7,11 @@ import java.util.Scanner;
  * Created by andrzej on 08.06.17.
  */
 public class HumanPlayer {
+	
 
+	private int numberOfTries = 0;
 
-
-
-
-	int numberOfTries = 0;
-
-	int guessedNumber = 0;
+	private	int guessedNumber = 0;
 
 
 
