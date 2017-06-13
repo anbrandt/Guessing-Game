@@ -10,7 +10,6 @@ public class Game {
 
 	public void gameStart() {
 
-
 		String answerFromUser = initialMessages();
 
 		try {
